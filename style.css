@@ -1,0 +1,184 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+} 
+header{
+    width: 100%;
+    height: 90vh;
+    background: url("image/banner2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+} 
+nav{
+    width: 100%;
+    height: 80px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+.logo{
+    font-family: arial,georgia,sans-serif;
+    font-size: 2.5em;
+}
+.logo span{
+    color: darkred;
+}
+.menu a{
+    text-decoration: none;
+    color: red;
+    padding: 10px 20px;
+    font-family: arial,georgia,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu a:first-child{
+    color: white;
+    background: #ac3022;
+    border-radius: 8px;
+}
+.menu a:hover{
+    color: white;
+    background: #ac3022;
+    border-radius: 8px;
+}
+.icon i{
+    font-size: 20px;
+}
+.icon i:hover{
+    color: #ac3022;
+}
+.icon a{
+    text-decoration: none;
+    background: #ac3022;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+.htext{
+    color: white;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.htext h1{
+    font-family:sans-serif;
+    font-size: 3em;
+    line-height: 1.5em;
+}
+.htext button{
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    border: 1px solid;
+    padding: 1.3em 4em;
+    color: white;
+    background: url("image/im.png");
+    background-size: 201%;
+    background-position: 200%;
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
+    transition-property: background-position , border, color;
+    position: relative;
+    margin-top: 30px;
+}
+.htext button:hover{
+    border: 1px solid;
+    color: black;
+    background-position: 50%;
+}
+.htext button:before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0.5em;
+    height: 0.5em;
+    top: -1.1px;
+    left: -1.1px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.htext button:hover:before{
+    background-color: white;
+
+}
+
+.htext button:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0.5em;
+    height: 0.5em;
+    top: 48px;
+    right: -1px;
+}
+.button-borders{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    transition: background-color 0.15s ease-in-out;
+
+}
+
+.button-borders:before{
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.9em);
+    height: 50%;
+    left: -0.10em;
+    top: -0.10em;
+    border: 5px;
+    border-bottom: 0px;
+    opacity: 0.3;
+}
+
+.button-borders:after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.9em);
+    height: 50%;
+    left: -0.3em;
+    bottom: -0.3em;
+    border: 5px;
+    border-top: 0px;
+    opacity: 0.3;
+}
+
+.gallery{
+    padding: 100px;
+}
+.por-menu{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.por-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+}
+.por-item{
+    width: 100%;
+}
+.por-item .item{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(#000000cc,rgba(0,0,0,0.8)), url("image/banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
